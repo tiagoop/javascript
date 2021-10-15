@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médias</title>
+</head>
+<body>
+    <h1>Calculadora de média</h1>
+    Primeira prova: <input type="number" name="pv1" id="pv1" >
+
+    Segunda prova: <input type="number" name="pv2" id="pv2" >
+    
+    Terceira prova: <input type="number" name="pv3" id="pv3" >
+    
+    <input type="button" value="Verificar" onclick="calcular()">
+    
+    <div id="med"> </div>
+
+    <script>
+        function calcular() {
+            var pv1 = document.querySelector ('input#pv1')
+            var pv2 = document.querySelector ('input#pv2')
+            var pv3 = document.querySelector ('input#pv3')
+            var med = document.querySelector ('div#med')
+            var p1 = Number (pv1.value)
+            var p2 = Number (pv2.value)
+            var p3 = Number (pv3.value)
+            var media =  (p1 + p2 + p3) /3 
+            med.innerHTML = `<p>Média: <strong>${media}</strong></p>`
+            if (media >= 6) {
+                med.innerHTML += `<p>Parabéns a sua média nesse bimestre ficou ${media} pontos e você esta a cima da média!</p>`
+            }
+            else {
+            med.innerHTML += `<p>Putz, parece que você ficou com ${media} pontos e você esta a baixo da média.  </p>`
+             }
+             med.innerHTML += `<p>Bons estudos!</p>`
+            }
+ </script>
+    
+</body>
+</html>
