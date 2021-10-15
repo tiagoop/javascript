@@ -5,20 +5,21 @@ body {
 }
 header {
 text-align: center;
-color: #B80C09 ;
+color: #ffffff ;
 }
 section {
     margin: auto;
     width: 500px;
     text-align: center;
-    background-color: #8367C7;
+    background-color:#ffffff;
     padding: 7px;
     border-radius: 7px;
-    color: #272932;
+    color: black;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.781);
+    
 }
 p {
-    font-size: 1.2em;
+    
 }
 footer {
     text-align: center;
@@ -26,9 +27,9 @@ font-style: italic;
 }
 
 a {
-    color:#B80C09 ;
+    color:black;
 }
-img {
-    border-radius: 7px;
-    margin: 0px;
-}
+h2 {padding: 0px;
+margin: 5px;}
+    
+    img {border-radius: 7px;}
